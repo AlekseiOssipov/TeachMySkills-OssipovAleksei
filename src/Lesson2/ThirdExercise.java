@@ -2,11 +2,12 @@ package Lesson2;
 
 import java.util.Scanner;
 
-public class thirdExercise {
+public class ThirdExercise {
+
+    Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
         String weight, height, result;
 
         System.out.println("Введите первое число: ");
@@ -21,8 +22,5 @@ public class thirdExercise {
                 "ООООО\n";
 
         System.out.println("Результат: \n" + result);
-
-        scanner.close();
     }
-
 }

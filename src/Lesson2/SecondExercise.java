@@ -1,6 +1,6 @@
 package Lesson2;
 
-public class secondExercise {
+public class SecondExercise {
 
     public static void main(String[] args) {
 
@@ -21,15 +21,13 @@ public class secondExercise {
         tenNumber = 45;
         short devide = (short) (secondNumber / tenNumber);
         eightNumber = 23265326L;
-        long devide2 = fourthNumber % eightNumber;
+        long devideSecond = fourthNumber % eightNumber;
 
-        int number = 323;
-        int number2 = ++number;
-        int number3 = number2++;
-        int number4 = 544224;
-        int number5 = --number;
-        int number6 = number4--;
-
+        int numberOne = 323;
+        int numberTwo = ++numberOne;
+        int numberThree = numberTwo++;
+        int numberFour = 544224;
+        int numberFive = --numberOne;
+        int numberSix = numberFour--;
     }
-
 }
