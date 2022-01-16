@@ -1,22 +1,22 @@
 package Lesson3;
 
-public class Cpu {
-    private String processorType;
+public class Cpu implements ComputerLife {
+
     private double clockSpeed;
     private int coreCount;
 
     public Cpu() {}
 
-
-    public Cpu(String processorType, double clockSpeed, int coreCount) {
-        this.processorType = processorType;
-        this.clockSpeed = clockSpeed;
-        this.coreCount = coreCount;
+    @Override
+    public void configureSettings() {
+        coreCount = 2 + (int) Math.round(Math.random() * 10);
+        clockSpeed = 100 + (int) Math.round(Math.random() * 1000);
     }
 
     @Override
     public String toString(){
-        return "Тип процессора = " + processorType + ", тактовая частота = " + clockSpeed + " ГГц, количество ядер = "
+        return "Тактовая частота = " + clockSpeed +
+                " ГГц, количество ядер = "
                 + coreCount;
     }
 
